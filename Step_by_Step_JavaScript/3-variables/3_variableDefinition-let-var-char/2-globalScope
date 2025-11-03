@@ -1,0 +1,57 @@
+// ------------------------
+// Global Scope
+// ------------------------
+let globalVar = "I am a global variable";
+const globalConst = 42;
+
+console.log("Global scope start:");
+console.log(globalVar);
+console.log(globalConst);
+
+// ------------------------
+// Function Scope
+// ------------------------
+function calculateSum(arr) {
+    // This variable exists only inside this function
+    let sum = 0;
+    console.log("\nInside function scope:");
+
+    for (let i = 0; i < arr.length; i++) {
+        // ------------------------
+        // Block Scope (inside for loop)
+        // ------------------------
+        let temp = arr[i] * 2;  // temp exists only in this block
+        console.log(`temp inside loop: ${temp}`);
+        sum += temp;
+    }
+
+    // Trying to access temp here will cause an error
+    // console.log(temp); // Un-commenting this line will throw ReferenceError
+
+    return sum;
+}
+
+let numbers = [1, 2, 3, 4];
+let result = calculateSum(numbers);
+console.log("Result from function:", result);
+
+// ------------------------
+// Another Block Scope
+// ------------------------
+if (result > 10) {
+    let message = "Result is greater than 10";
+    const timestamp = new Date();
+    console.log("\nInside if-block scope:");
+    console.log(message);
+    console.log("Timestamp:", timestamp);
+}
+
+// Trying to access message or timestamp here will fail
+// console.log(message); // ReferenceError
+// console.log(timestamp); // ReferenceError
+
+// ------------------------
+// Global scope still accessible
+// ------------------------
+console.log("\nBack to global scope:");
+console.log(globalVar);

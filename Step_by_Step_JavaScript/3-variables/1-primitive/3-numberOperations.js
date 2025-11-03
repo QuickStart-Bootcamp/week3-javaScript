@@ -1,12 +1,9 @@
 /*
-  Rules for Naming Variables
-  1- Must start with a letter, underscore (_), or dollar sign ($).
-  2- Cannot start with a number.
-  3- Case-sensitive (myVar and myvar are different).
-  4- Cannot use reserved JavaScript keywords.
-  Reference Number Methods: https://www.w3schools.com/js/js_number_methods.asp
+  Reference: https://www.w3schools.com/js/js_number_methods.asp
+  Reference: https://www.w3schools.com/js/js_math.asp 
   >, <, ==: Game score
-  Rounding Numbers: Used in billing or pricing, where prices are rounded to the nearest dollar or cent.
+  Rounding: Used in billing or pricing, where prices are rounded to the nearest dollar or cent.
+  Math: Ready js object, Reference: https://www.w3schools.com/js/js_math.asp 
 */
 
 let price = 12.95
@@ -23,6 +20,9 @@ price--;
 
 let score = 85
 console.log (score < 90)
+
+let newPrice = Math.round (price)
+console.log (newPrice)
 
 
 

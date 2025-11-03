@@ -1,5 +1,5 @@
 /*
- String Reference: https://www.w3schools.com/js/js_string_methods.asp
+ Reference: https://www.w3schools.com/js/js_string_methods.asp
  Concatination: Used when displaying information
  String Lenght: Used in form validation
  Changing Case: Used to change letter casing

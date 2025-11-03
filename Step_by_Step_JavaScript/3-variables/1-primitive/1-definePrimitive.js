@@ -4,7 +4,6 @@
   2- Cannot start with a number.
   3- Case-sensitive (myVar and myvar are different).
   4- Cannot use reserved JavaScript keywords.
-
   Primitive: number, string, boolean, undefine, null, symbol, bigint
 */
 
@@ -32,7 +31,7 @@ let classData = null
 
 // 6. symbol
 let id1 = Symbol ("id")
-let id2 = Symbol("id");
+let id2 = Symbol ("id");
 
 
 // 7. bigInt
