@@ -24,10 +24,6 @@ function calculateSum(arr) {
         console.log(`temp inside loop: ${temp}`);
         sum += temp;
     }
-
-    // Trying to access temp here will cause an error
-    // console.log(temp); // Un-commenting this line will throw ReferenceError
-
     return sum;
 }
 
@@ -41,17 +37,6 @@ console.log("Result from function:", result);
 if (result > 10) {
     let message = "Result is greater than 10";
     const timestamp = new Date();
-    console.log("\nInside if-block scope:");
     console.log(message);
     console.log("Timestamp:", timestamp);
 }
-
-// Trying to access message or timestamp here will fail
-// console.log(message); // ReferenceError
-// console.log(timestamp); // ReferenceError
-
-// ------------------------
-// Global scope still accessible
-// ------------------------
-console.log("\nBack to global scope:");
-console.log(globalVar);
