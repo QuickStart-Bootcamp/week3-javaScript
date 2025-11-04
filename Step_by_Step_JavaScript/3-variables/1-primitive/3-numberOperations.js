@@ -18,11 +18,13 @@ price = price / 2;
 price++ ;
 price--;
 
+
 let score = 85
-console.log (score < 90)
+
 
 let newPrice = Math.round (price)
 console.log (newPrice)
+
 
 
 
