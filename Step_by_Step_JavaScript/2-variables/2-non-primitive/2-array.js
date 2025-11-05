@@ -1,4 +1,8 @@
-// Array = A data structure cthat can hold more than 1 value
+/*
+ Array: A data structure cthat can hold more than 1 value 
+ Reference array: https://www.w3schools.com/js/js_arrays.asp
+*/
+
 
 
 let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]

@@ -4,12 +4,16 @@
 // Reference: https://www.w3schools.com/js/js_functions.asp
 
 
+
+// function with no parameters
 function greetingQuickstart () {
   console.log ("Hi")
   console.log ("Welcome to our class")
   console.log ("My name is Roberto")
 }
 
+
+// function with parameters
 function greetingStudent (studentName) {
   console.log (`Welcome to our class ${studentName}`)
   console.log ("my name is Roberto")
@@ -18,14 +22,21 @@ function greetingStudent (studentName) {
   console.log (`${studentName} ! Your mentor is Usman `)
 }
 
-function greetingAll () {
-  console.log ("Welcome to Our Class")
-  //document.getElementById ("result").textContent = "Welcome to Our Class"
+
+// function with return value
+function addNumbers (num1, num2) {
+  let result = num1 + num2
+  return result
 }
 
-function greetingsOne (studentName) {
-  console.log (`Welcome to Our Class: ${studentName}`)
-  //document.getElementById ("result").textContent = `Welcome to our class ${studentName} `
+
+// Real-World Scenario
+function calculateDiscount (price, discountPercent) {
+  let discountAmount = (price * discountPercent)
+  let finalPrice = price - discountAmount 
+  return finalPrice
 }
+
+
 
 
