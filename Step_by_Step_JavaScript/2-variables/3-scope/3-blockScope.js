@@ -5,17 +5,36 @@ const variable: block Scope
 var variable:   function scope
 */
 
-var className = "1: Software Engineering"
-let studentName = "1: Affan Haq"
-const roomNumber = "1: B202"
 
-if (true) {
-  var num1 = "1"
-  let num2 = "2"
-  const num3 = "3"
+if (false) {
+  let myName = "Farnaz"
+  var myAge = 40
+  const myHeight = 160
+
+  console.log ("inside block: " + myName)
+  console.log ("inside block: " + myAge)
+  console.log ("inside block: " + myHeight)
 }
 
 
-  console.log (num1)
-  console.log (num2)
-  console.log (num3)
+// console.log ("outside Block: " + myName)
+// console.log ("outside Block: " + myAge)
+// console.log ("outside block: " + myHeight)
+
+
+if (true) {
+  let myName = "Farnaz"
+  var myAge = 40
+  const myHeight = 160
+
+  function myFunc () {
+    console.log ("inside function: " + myName)
+    console.log ("inside block: " + myAge)
+    console.log ("inside block: " + myHeight)
+  }
+
+  console.log ("inside block: " + myName)
+  console.log ("inside block: " + myAge)
+  console.log ("inside block: " + myHeight)
+  myFunc ()
+}
