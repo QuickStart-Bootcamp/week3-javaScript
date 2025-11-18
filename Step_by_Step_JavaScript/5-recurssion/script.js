@@ -18,7 +18,18 @@
     console.log("four");
   }
 
+  // one()
 
-  one()
+
+function box(step) {
+  console.log(step);
+
+  if (step === 4) return;   // stop opening boxes
+
+  box(step + 1);           // open the next box
+}
+
+box(1);
+
 
 
